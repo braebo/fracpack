@@ -2,6 +2,10 @@
 
 Easy `npm` packages with [svelte-package](https://kit.svelte.dev/docs/packaging) and  [changesets](https://github.com/changesets/changesets).
 
+> see [fracpack-auth](https://github.com/fractalhq/fracpack-auth) for private packages and a password-protected demo/docs site.
+
+<br>
+
 ## Running locally
 
 ```bash
@@ -16,13 +20,14 @@ pnpm run dev
 
 navigate to http://localhost:3333
 
-
 <br>
 
 ## Setup
 
 - Add your `npm` token to your Github environment variables.
 - Update the `repo` field in `.changeset/config.json`
+
+<br>
 
 ## Usage
 
@@ -34,7 +39,9 @@ navigate to http://localhost:3333
 
 `npx changset` - [Publish](#publishing) the build.
 
-Anything exported from [`src/package/index.ts`]() will be included in the `npm` package (with type declaration files automatically generated). Markdown can be used anywhere (see [`src/routes/docs/+page.md`]()). I like to use the home page ([`src/routes/+page.svelte`]()) for demos. See [`svelte.config.js`]() and [`vite.config.js`]() for furthor configuration.
+Anything exported from [src/package/index.ts]() will be included in the npm package (with type declaration files automatically generated). Markdown can be used anywhere (see [src/routes/docs/+page.md]()). I like to use the home page ([src/routes/+page.svelte]()) for demos. See [svelte.config.js]() and [vite.config.js]() for further configuration.
+
+<br>
 
 ## Publishing
 

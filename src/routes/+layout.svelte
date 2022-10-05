@@ -1,15 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores'
 	import Nav from '$lib/Nav.svelte'
-	import '../styles/app.scss'
 	import 'greset/greset.css'
+	import '../styles/app.scss'
 </script>
 
 <header>
-	<p>
-		Logged in: {$page.data.user.username}
-	</p>
-
 	<Nav />
 </header>
 

@@ -20,7 +20,7 @@ jobs:
   #       run: pnpm check
   release:
     # needs: test
-    if: github.repository == 'fractalhq/fracpane'
+    if: github.repository == 'fractalhq/fracpack'
     name: Release
     runs-on: ubuntu-latest
     steps:

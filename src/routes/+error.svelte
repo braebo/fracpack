@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Error from '$lib/Error.svelte'
 	import { dev } from '$app/environment'
+	import Error from '$lib/Error.svelte'
 	import { page } from '$app/stores'
 
 	if (dev) console.log($page.error)

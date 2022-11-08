@@ -19,9 +19,11 @@ p,
 li {
 	color: var(--dark-a, --text-color);
 
-	font-size: var(--font);
-	font-weight: 200;
 	line-height: 1.5;
+	font-size: var(--font-md);
+	letter-spacing: 0.25px;
+	word-spacing: 2px;
+	font-weight: 400;
 
 	@media screen and (max-width: 560px) {
 		word-wrap: break-word;
@@ -33,10 +35,12 @@ li {
 }
 
 a {
-	color: var(--dark-a);
+	color: var(--dark-d);
 
 	text-decoration: underline;
 	text-decoration-color: var(--light-d);
+	font-weight: 500;
+	transition: .2s;
 
 	&:hover {
 		text-decoration: underline;

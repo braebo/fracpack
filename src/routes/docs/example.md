@@ -26,6 +26,7 @@ navigate to http://localhost:3333
 
 - Add your `npm` token to your Github environment variables.
 - Update the `repo` field in `.changeset/config.json`
+- Update the `github.repository` field in `.github/workflows/release.yml`
 
 <br>
 

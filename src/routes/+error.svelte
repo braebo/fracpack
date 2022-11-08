@@ -7,9 +7,9 @@
 </script>
 
 <template lang="pug">
-	
+
 	Error
-	
+
 	+if('dev && $page.status != "404"')
 		h1 {$page.status}
 

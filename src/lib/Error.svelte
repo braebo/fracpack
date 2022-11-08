@@ -29,10 +29,7 @@
 		let hold = options?.hold || defaultTyperOptions.hold
 		let cooldown = options?.cooldown || defaultTyperOptions.cooldown
 
-		text =
-			!text?.length && node.textContent
-				? (text = node.textContent)
-				: 'please add text to you element, or pass in "text" as an option'
+		text = !text?.length && node.textContent ? (text = node.textContent) : 'please add text to you element, or pass in "text" as an option'
 
 		const letters = Array.from(String(text))
 
@@ -92,11 +89,7 @@
 			filterUnits="userSpaceOnUse"
 		>
 			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix
-				in="SourceAlpha"
-				result="hardAlpha"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-			/>
+			<feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
 			<feOffset />
 			<feGaussianBlur stdDeviation="37" />
 			<feComposite in2="hardAlpha" operator="out" />
@@ -107,15 +100,7 @@
 	</defs>
 	<g class="Terminal404">
 		<g class="TerminalGroup">
-			<rect
-				width="621.24"
-				height="465.326"
-				x="522.462"
-				y="107.551"
-				fill="var(--light-b, #1B1B1D)"
-				class="Terminal"
-				rx="15"
-			/>
+			<rect width="621.24" height="465.326" x="522.462" y="107.551" fill="var(--light-d, #1B1B1D)" class="Terminal" rx="15" />
 			<g class="TerminalButtons">
 				<circle cx="541.67" cy="128.119" r="6.045" fill="#935353" class="Red" />
 				<circle cx="559.963" cy="128.119" r="6.045" fill="#C5BD7A" class="Yelllow" />
@@ -123,31 +108,21 @@
 			</g>
 		</g>
 		<path
-			fill="var(--light-b, #1B1B1D)"
+			fill="var(--light-d, #1B1B1D)"
 			d="M415.596 469.988h-58.873v114.155h-77.18l-.359-114.155H73.488v-56.001L216.003 78.7l67.847 26.924-126.36 301.901h122.053l9.692-132.463h67.488v132.463h58.873v62.463z"
 			class="L4"
 		/>
 		<path
-			fill="var(--light-b, #1B1B1D)"
+			fill="var(--light-d, #1B1B1D)"
 			d="M1592.42 469.988h-58.87v114.155h-77.18l-.36-114.155h-205.7v-56.001L1392.83 78.7l67.85 26.924-126.36 301.901h122.05l9.69-132.463h67.49v132.463h58.87v62.463z"
 			class="R4"
 		/>
-		<foreignObject
-			x="35%"
-			y="42%"
-			width="30%"
-			height="100%"
-			style="text-align: center; line-height: 10rem;"
-		>
+		<foreignObject x="35%" y="42%" width="30%" height="100%" style="text-align: center; line-height: 10rem;">
 			<h3 class="NOT-FOUND" use:typer={{ delay: 1000 }}>NOT FOUND</h3>
 		</foreignObject>
 	</g>
 	<foreignObject x="32%" clip-path="url(#terminalClipPath)" width="50%" height="100%">
-		<pre
-			clip-path="url(#terminalClipPath)"
-			class="code"
-			style="max-width: {(svgWidth ?? 500) *
-				0.9}px;">
+		<pre class="code" style="max-width: {(svgWidth ?? 500) * 0.9}px;">
 	findRoute(
 			path: string,
 			routes: any,

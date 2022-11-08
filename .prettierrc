@@ -4,6 +4,12 @@
 	"trailingComma": "all",
 	"semi": false,
 	"printWidth": 140,
-	"pluginSearchDirs": ["."],
-	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": {
+				"parser": "svelte"
+			}
+		}
+	]
 }

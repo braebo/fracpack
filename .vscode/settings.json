@@ -5,18 +5,13 @@
 		"*.svg": "html" //* Prettier
 	},
 
-	"[json]": {
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
+	"editor.autoIndent": "advanced",
 
 	"[javascript, typescript]": {
-		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 
 	"[svelte]": {
-		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
 
@@ -27,7 +22,7 @@
 
 	"workbench.iconTheme": "material-icon-theme",
 
-	"workbench.editor.labelFormat": "short",
+	"workbench.editor.labelFormat": "default",
 
 	//* File nesting.
 	"explorer.fileNesting.enabled": true,
@@ -49,13 +44,7 @@
 		"favicon.ico": "robots.txt, safari-pinned-tab.svg, browserconfig.xml, site.webmanifest, *.png"
 	},
 
-	//* Custom region folding.
-	"explicitFolding.rules": {
-		"*": {
-			"beginRegex": "[ \\t]*?\\/\\/\\·(?:.*)?",
-			"endRegex": "[ \\t]*?\\/\\/\\⌟(?:.*)?"
-		}
-	},
+	"editor.foldingStrategy": "auto",
 
 	//* More comment tags.
 	"better-comments.tags": [
@@ -106,15 +95,6 @@
 			"italic": false
 		},
 		{
-			"tag": "-",
-			"color": "#aabbaa",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
 			"tag": "*",
 			"color": "#98C379",
 			"strikethrough": false,
@@ -136,7 +116,7 @@
 					"constant.name.attribute.tag.pug"
 				],
 				"settings": {
-					"foreground": "#5a86ff36"
+					"foreground": "#dddfe6b6"
 				}
 			},
 			//* Disable Bold & Itallic for all themes.
